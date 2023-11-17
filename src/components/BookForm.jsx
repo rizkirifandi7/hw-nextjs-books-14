@@ -1,5 +1,5 @@
 import { createBook, editBook } from "@/modules/fetch";
-import {useToast} from "@chakra-ui/react";
+import { useToast } from "@chakra-ui/react";
 import { useEffect, useState } from "react";
 
 export default function BookForm({ bookData }) {
@@ -75,7 +75,7 @@ export default function BookForm({ bookData }) {
 	}, [bookData]);
 
 	return (
-		<form onSubmit={handleSubmit} className="max-w-md mx-auto mt-5">
+		<form onSubmit={handleSubmit} className="max-w-md mx-auto mt-5 bg-white shadow-md rounded px-8 pt-6 pb-8 mb-4">
 			<div className="space-y-4">
 				<div className="mb-4">
 					<label htmlFor="title" className="block text-sm font-medium text-gray-700">
